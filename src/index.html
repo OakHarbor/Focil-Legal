@@ -1,0 +1,478 @@
+---
+title: "Immigration & Injury Lawyer Miami | Focil Legal | Se Habla Español"
+description: "Deportation defense & personal injury attorneys in Miami & Southern California. Free consultation. Payment plans from $500. Call 805-991-6692. Hablamos español."
+permalink: "/"
+tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <!-- Critical styles are loaded first -->
+    <link rel="stylesheet" href="/assets/css/critical.css"/>
+
+    <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
+    {% if kit.isProduction %}
+        <link rel="preload" href="/assets/css/local.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="/assets/css/local.css">
+        </noscript>
+
+    {% else %}
+        <link rel="stylesheet" href="/assets/css/local.css"/>
+    {% endif %}
+
+    <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
+    <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
+    <!-- {% include "components/home-schema.html" %} -->
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-1800">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Fighting for Your American Dream</h1>
+            <p class="cs-text">
+                At Focil Legal, we protect your rights, defend your future, and guide you through immigration, injury, and criminal defense with courage, compassion, and experience.
+            </p>
+            <a href="{{ client.calendly }}" class="cs-button-solid" target="_blank">Book Your Consultation</a>
+        </div>
+        <div class="cs-video-group">
+            <div class="cs-video-wrapper">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({ width: 576, height: 456, position: "top" }) | webp %}" type="image/webp">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({ width: 956, height: 1372, position: "top" }) | webp %}" type="image/webp">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({ width: 1260, height: 1760, position: "top" }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/hero.jpg" | resize({ width: 1260, height: 1760, position: "top" }) | jpeg %}" alt="family law attorney" loading="eager" width="630" height="880" decoding="async">
+                </picture>
+            </div>
+            <div class="cs-box">
+                <img class="cs-box-icon" src="/assets/svgs/dna.svg" alt="dna icon" width="48" height="48" aria-hidden="true" decoding="async">
+                <span class="cs-header">We have over 20+ years 
+                    of experience</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+
+<section id="services-1800">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">Legal Representation You Can Trust</h2>
+                <p class="cs-text">
+                    From immigration defense to personal injury and federal claims, Focil Legal provides experienced advocacy, affordable payment options, and personalized guidance to help protect what matters most.
+                </p>
+            </div>
+            <a href="/contact/" class="cs-button-solid">Get A Consultation</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/fort-worth-divorce-attorneys/" class="cs-link">
+                    <h3 class="cs-h3">Immigration Law</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 576, height: 480 }) | webp %}" type="image/webp">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 634, height: 640 }) | webp %}" type="image/webp">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 826, height: 640 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/c1.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="professional in work uniform" width="413" height="320" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/gestational-agreements-and-surrogacy-texas/" class="cs-link">
+                    <h3 class="cs-h3">Personal Injury 
+                        Representation</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 576, height: 480 }) | webp %}" type="image/webp">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 634, height: 640 }) | webp %}" type="image/webp">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 826, height: 640 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/c2.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Business person in red suit jacket" width="413" height="320" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/child-custody/" class="cs-link">
+                    <h3 class="cs-h3">Federal Injury Cases</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 576, height: 480 }) | webp %}" type="image/webp">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 634, height: 640 }) | webp %}" type="image/webp">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 826, height: 640 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/c3.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Woman in red blazer smiling" width="413" height="320" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/child-support/" class="cs-link">
+                    <h3 class="cs-h3">Criminal Defense</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 576, height: 480 }) | webp %}" type="image/webp">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 634, height: 640 }) | webp %}" type="image/webp">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 826, height: 640 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/c4.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="worker in white coat" width="413" height="320" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/domestic-violence-and-divorce/" class="cs-link">
+                    <h3 class="cs-h3">International 
+                        Migration Services</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 576, height: 480 }) | webp %}" type="image/webp">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 634, height: 640 }) | webp %}" type="image/webp">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 826, height: 640 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/c5.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Close-up of hands in business handshake" width="413" height="320" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/family-law-order-enforcement/" class="cs-link">
+                    <h3 class="cs-h3">Direct Attorney 
+                        Engagement</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 576, height: 480 }) | webp %}" type="image/webp">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 634, height: 640 }) | webp %}" type="image/webp">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 826, height: 640 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/c6.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Gavel and legal documents on desk" width="413" height="320" loading="lazy" decoding="async">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-297">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <!--Floating Box-->
+            <div class="cs-box">
+                <span class="cs-number">20</span>
+                <span class="cs-desc">Years Combined Experience</span>
+                <!--Background image for cs-box-->
+                <picture class="cs-box-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/flag.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/flag.jpg" | resize({ width: 634, height: 640 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/flag.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/flag.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Wooden gavel on dark surface" width="413" height="320" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <!--Big Background Image-->
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 576, height: 638, position: 'top' }) | webp %}" type="image/webp">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 820, height: 1062, position: 'top' }) | webp %}" type="image/webp">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 1042, height: 1344, position: 'top' }) | webp %}" type="image/webp">
+                <img src="{% getUrl "/assets/images/c7.jpg" | resize({ width: 1042, height: 1344, position: 'top' }) | jpeg %}" alt="Professional headshot of businessman in suit" width="521" height="672" loading="lazy" decoding="async">
+            </picture>
+            
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">Leading Family Law Firm</span>
+            <h2 class="cs-title">Dedicated to Justice 
+                and Fairness</h2>
+            <p class="cs-text">
+                Focil Legal PLLC is a veteran-owned, bilingual law firm committed to fighting for immigrants, families, and victims of injustice with experience, integrity, and unwavering dedication.
+            </p>
+            <span class="cs-list-header">Key Qualifications & Achievements:</span>
+            <ul class="cs-ul" id="list-1165">
+                <li class="cs-li">Veteran-owned and operated law firm</li>
+                <li class="cs-li">Direct attorney engagement from start to finish</li>
+                <li class="cs-li">Affordable payment plans starting at $500 down</li>
+                <li class="cs-li">100% bilingual team with deep cultural awareness</li>
+                <li class="cs-li">Over 20 years of combined legal experience</li>
+            </ul>
+            <a class="cs-button-solid" href="/contact/" target="_blank">Learn More About Us</a>
+        </div>
+    </div>
+</section>
+                
+<!-- ============================================ -->
+<!--                Why Choose Us                 -->
+<!-- ============================================ -->
+
+<section id="why-choose-1634">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Trusted</span>
+                <h2 class="cs-title">Strong Advocacy, 
+                    Proven Experience</h2>
+            </div>
+            <p class="cs-text">
+                Clients trust Focil Legal because we combine legal expertise with compassion, cultural understanding, and affordable solutions designed to make justice accessible for all.
+            </p>
+        </div>  
+        <div class="cs-wrapper">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon"
+                                src="/assets/images/w1.svg"
+                                loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Bilingual Representation</h3>
+                        <p class="cs-item-text">
+                            Comprehensive support in both English and Spanish significantly enhances communication for all users involved.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" src="/assets/images/w2.svg"
+                                loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Veteran-Owned Values</h3>
+                        <p class="cs-item-text">
+                            We prioritize integrity, discipline, and a strong commitment to our clients' long-term success and satisfaction.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon"
+                                src="/assets/images/w3.svg"
+                                loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                    </picture>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">Affordable Plans</h3>
+                        <p class="cs-item-text">
+                            Flexible payment options guarantee clients receive essential legal assistance when they need it most.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="cs-image-group">
+                <div class="cs-picture-wrapper">
+                    <picture class="cs-picture cs-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c8.jpg" | resize({ width: 468, height: 402 }) | webp %}" type="image/webp">
+                        <!--Tablet Image-->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c8.jpg" | resize({ width: 868, height: 832 }) | webp %}" type="image/webp">
+                        <!--Desktop Image-->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c8.jpg" | resize({ width: 868, height: 752 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/c8.jpg" | resize({ width: 868, height: 752 }) | jpeg %}" alt="Two people reviewing documents outdoors" width="434" height="376" loading="lazy" decoding="async">
+                    </picture>
+                    <div class="cs-box">
+                        <span class="cs-header">We Are In Your Corner</span>
+                        <span class="cs-desc">Focil Legal</span>
+                    </div>
+                </div>
+                <picture class="cs-picture cs-picture2">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c9.jpg" | resize({ width: 212, height: 212 }) | webp %}" type="image/webp">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c9.jpg" | resize({ width: 394, height: 432 }) | webp %}" type="image/webp">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c9.jpg" | resize({ width: 394, height: 394 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/c9.jpg" | resize({ width: 394, height: 394 }) | jpeg %}" alt="Professional man in dark suit" width="197" height="197" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-1693">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-text-group">
+                <h2 class="cs-title">Focused Advocacy for 
+                    Clients’ Rights</h2>
+                <p class="cs-text">
+                    Don’t wait to defend your rights. Whether you face immigration challenges, injuries, or criminal charges, our attorneys are ready to fight for you.
+                </p>
+            </div>
+            <a href="/contact/" class="cs-button-solid cs-secondary">Schedule Your Free Case Review</a>
+        </div>
+    </div>
+    <img class="cs-floater cs-floater1" src="/assets/images/cta1.png" alt="sheild" width="148" height="360" aria-hidden="true" loading="lazy" decoding="async">
+    <img class="cs-floater cs-floater2" src="/assets/images/cta2.png" alt="sheild" width="148" height="360" aria-hidden="true" loading="lazy" decoding="async">
+</section>
+
+<!-- ============================================ -->
+<!--                 Why Choose Us                -->
+<!-- ============================================ -->
+
+<section id="why-choose-1710">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">20 Combined Years Experience</span>
+                <h2 class="cs-title">Focused Advocacy for 
+                    Clients’ Rights</h2>
+            </div>
+            <div class="cs-right">
+                <p class="cs-text-top">
+                    Our firm prioritizes strong representation in immigration, injury, and civil matters, ensuring clients receive justice through skilled and compassionate advocacy.
+                </p>
+                <p class="cs-text">
+                    Immigration law is at the heart of our practice, with particular focus on deportation defense and asylum cases. We fight tirelessly to keep families together and protect those seeking refuge, offering personalized representation and affordable plans to ease the process.
+                </p>
+                <p class="cs-text">
+                    We are preparing to expand into personal injury, torts, and civil litigation, all handled on a contingency basis. This means clients only pay if compensation is recovered, ensuring justice remains accessible without financial burden at the start.
+                </p>
+                <a class="cs-button-solid cs-secondary" href="/contact/">Explore Our Legal Services</a>
+            </div>
+        </div>
+    </div>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c10.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+        <!--Tablet Image-->
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c10.jpg" | resize({ width: 1984, height: 962 }) | webp %}" type="image/webp">
+        <!--Desktop Image-->
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c10.jpg" | resize({ width: 2500, height: 1211 }) | webp %}" type="image/webp">
+        <img src="{% getUrl "/assets/images/c10.jpg" | resize({ width: 2500, height: 1211 }) | jpeg %}" alt="Silhouettes of two people against sunset sky" width="1280" height="620" loading="lazy" decoding="async">
+    </picture>
+</section>
+                      
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="reviews-990">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">What Clients Say</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-flex">
+                    <span class="cs-name">Ernesto C.</span>
+                    <span class="cs-desc">Google</span>
+                    <p class="cs-item-text">
+                        Excellent work from Focil Legal PLLC. At all times they stayed on top of the case. They obtained work permits for our family and closed the court case in a very short time. We will continue with them for future legal procedures in the country.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex">
+                    <span class="cs-name">Pedro H.</span>
+                    <span class="cs-desc">Google</span>
+                    <p class="cs-item-text">
+                        It is a united team that meets the expectations of its clients, where the client is the priority. Thank you, Focil Legal team.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex">
+                    <span class="cs-name">Dani F.</span>
+                    <span class="cs-desc">Google</span>
+                    <p class="cs-item-text">
+                        Thanks to them, my boyfriend and I received our work permit earlier than expected. We are very grateful. They are handling our asylum case and are always attentive to everything we have needed with our case. We highly recommend them, the firm is super efficient.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Blog                      -->
+<!-- ============================================ -->
+
+<section id="blog-988">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">News & articles</span>
+                <h2 class="cs-title">News & Updates</h2>
+            </div>
+            <a href="/blog/" class="cs-button-solid">View All Articles</a>
+        </div>
+        <ul class="cs-card-group">
+            {% for post in collections.post | reverse %}
+            {% if loop.index <= 3 %}
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl post.data.image | resize({ width: 576, height: 960 }) | avif %}" type="image/avif">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 634, height: 960 }) | avif %}" type="image/avif">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 826, height: 960 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl post.data.image | resize({ width: 826, height: 960 }) | jpeg %}" alt="{{ post.data.imageAlt }}" width="413" height="480" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-date">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/calendar.svg" alt="calendar icon" width="20" height="20">
+                        {{ post.data.date | postDate }}
+                    </span>
+                    <h3 class="cs-h3">{{ post.data.title }}</h3>
+                    <span class="cs-desc">
+                        {{ post.data.description }}
+                    </span>
+                    <a href="{{ post.url }}" class="cs-link">Read More</a>
+                </div>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                  Subscribe                   -->
+<!-- ============================================ -->
+
+<section id="subscribe-1721">
+    <div class="cs-container">
+        <div class="cs-content">
+            <img class="cs-quote" loading="lazy" decoding="async" src="/assets/images/quote.svg" alt="graphic" width="80" height="66" aria-hidden="true">
+            <p class="cs-text">
+                Justice is not given; it is fought for with courage, truth, and compassion in every case we take on.
+            </p>
+            <!--Graphic-->
+            <img class="cs-floater" loading="lazy" decoding="async" src="/assets/images/sheild.png" alt="graphic" width="125" height="118" aria-hidden="true">
+        </div>
+    </div>
+    <!--Background Image-->
+    <div class="cs-background">
+        <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.002820744128!2d-118.82840749999998!3d34.1640821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e825b766a89963%3A0x45e9d042251bdf6f!2sFocil%20Legal%20PLLC!5e1!3m2!1sen!2sus!4v1757741413721!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+{% endblock %}

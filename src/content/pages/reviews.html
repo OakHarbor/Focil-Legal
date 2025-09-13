@@ -1,0 +1,77 @@
+---
+title: "Reviews | Code Stitch Web Designs"
+description: "Meta description for the page"
+permalink: "/reviews/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/reviews.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-559">
+    <div class="cs-container">
+        <span class="cs-int-title">Reviews</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 582 }) | webp %}" type="image/webp">
+        <!--Tablet Image-->
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 730 }) | webp %}" type="image/webp">
+        <!--Desktop Image-->
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 501 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 501 }) | jpeg %}" alt="professional lawyers book" width="1920" height="385" decoding="async">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="reviews-990">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">What Clients Say</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-flex">
+                    <span class="cs-name">Ernesto C.</span>
+                    <span class="cs-desc">Google</span>
+                    <p class="cs-item-text">
+                        Excellent work from Focil Legal PLLC. At all times they stayed on top of the case. They obtained work permits for our family and closed the court case in a very short time. We will continue with them for future legal procedures in the country.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex">
+                    <span class="cs-name">Pedro H.</span>
+                    <span class="cs-desc">Google</span>
+                    <p class="cs-item-text">
+                        It is a united team that meets the expectations of its clients, where the client is the priority. Thank you, Focil Legal team.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex">
+                    <span class="cs-name">Dani F.</span>
+                    <span class="cs-desc">Google</span>
+                    <p class="cs-item-text">
+                        Thanks to them, my boyfriend and I received our work permit earlier than expected. We are very grateful. They are handling our asylum case and are always attentive to everything we have needed with our case. We highly recommend them, the firm is super efficient.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,134 @@
+---
+title: "Contact | Code Stitch Web Designs"
+description: "Meta description for the page"
+permalink: "/contact/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/construction.jpg" | resize({ width: 576, height: 640 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-559">
+    <div class="cs-container">
+        <span class="cs-int-title">Contact Us</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 582 }) | webp %}" type="image/webp">
+        <!--Tablet Image-->
+        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 730 }) | webp %}" type="image/webp">
+        <!--Desktop Image-->
+        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 501 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 501 }) | jpeg %}" alt="professional lawyers book" width="1920" height="385" decoding="async">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-1700">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Free no obligation consultations, anytime.</h2>
+            <p class="cs-text">
+                Get your case evaluated today, don’t wait. For urgent matters, please call, text or whatsapp the number below:
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="/assets/svgs/phone-76.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Phone</span>
+                        <a href="tel:805-743-7112" class="cs-link">(805) 743-7112 
+                        </a>
+                    </div>
+                </li>
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="/assets/svgs/mail-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Los Angeles Office</span>
+                        <a href="mailto:{{ client.email }}" class="cs-link">3717 E. Thousand Oaks Blvd. Suite 160 Westlake Village, CA 91362</a>
+                    </div>
+                </li>
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="/assets/svgs/pin-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Miami Office</span>
+                        <a href="{{client.address.mapLink}}" class="cs-link" target="_blank">7270 NW 12th St Suite 865, Miami, FL 33126, US
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <img class="cs-image" src="/assets/images/affirm.png" alt="clientcredit and affirm" width="632" height="725" decoding="async">
+            <h3 class="cs-h3">
+                You can afford a good lawyer. Payment Plans Available. 
+            </h3>
+            <p class="cs-text">
+                Focil Legal now offers financing through affirm so you don’t have to wait to find justice. Apply today without a credit check. Contact us to find out more. 
+            </p>
+        </div>
+        <!--Form-->
+        <form class="cs-form" id="cs-form-1700" name="Contact Form" method="post" data-netlify="true" data-netlify-recaptcha="true">
+            <div class="cs-content">
+                <h2 class="cs-title">Let's Get Started</h2>
+            </div>
+            <label class="cs-label">
+                Name *
+                <input class="cs-input" required type="text" id="name-1700" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label">
+                Email *
+                <input class="cs-input" required type="email" id="email-1700" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label">
+                Phone
+                <input class="cs-input" type="tel" id="phone-1700" name="phone" placeholder="Phone">
+            </label>
+            <label for="" class="cs-label">
+                Type Of Case
+                <select class="cs-select" id="legal-service" name="legal-service">
+                    <option value="criminal">Criminal</option>
+                    <option value="immigration">Immigration</option>
+                    <option value="litigation">Litigation</option>
+                </select>
+            </label>
+            <label class="cs-label">
+                Message *
+                <textarea class="cs-input cs-textarea" required name="Message" id="message-1700"
+                        placeholder="Message"></textarea>
+            </label>
+            <div class="cs-span-12" data-netlify-recaptcha="true"></div>
+            <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/building.jpg" | resize({ width: 576, height: 1270 }) | webp %}" type="image/webp">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/building.jpg" | resize({ width: 922, height: 1414 }) | webp %}" type="image/webp">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/building.jpg" | resize({ width: 1264, height: 1450 }) | webp %}" type="image/webp">
+                <img src="{% getUrl "/assets/images/building.jpg" | resize({ width: 1264, height: 1450 }) | png %}" alt="Tall modern office building exterior" width="632" height="725" decoding="async">
+            </picture>
+        </form>
+    </div>
+</section>
+
+{% endblock %}
