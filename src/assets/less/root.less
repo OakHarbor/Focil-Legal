@@ -221,6 +221,10 @@
         font-weight: 700;
     }
 
+    .cs-span-12 {
+        grid-column: span 12;
+    }
+
     .cs-hide-on-mobile {
         display: none !important;
     }
@@ -490,7 +494,7 @@
 <--- -------------------------- -*/
 
 /* Mobile - 1023px */
-@media only screen and (max-width: 1299.5px) {
+@media only screen and (max-width: 1599.5px) {
     body {
         &.cs-open {
             overflow: hidden;
@@ -853,7 +857,7 @@
                 transition: transform 0.6s;
         
                 &:before {
-                    /* backgorund color in pseudo so we can use the primary color variable and use opacity */
+                    /* background color in pseudo so we can use the primary color variable and use opacity */
                     content: "";
                     width: 100%;
                     height: 100%;
@@ -941,7 +945,7 @@
             /* prevent flexbox from squishing it */
             flex: none;
             &:last-of-type {
-                /* pushes the button to the far roght */
+                /* pushes the button to the far right */
                 margin-left: auto;
                 padding: 0;
             }

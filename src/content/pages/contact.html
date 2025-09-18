@@ -8,6 +8,7 @@ permalink: "/contact/"
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 480 }) | webp %}"/>
 {% endblock %}
 
 {% block body %}
@@ -28,7 +29,7 @@ permalink: "/contact/"
         <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 730 }) | webp %}" type="image/webp">
         <!--Desktop Image-->
         <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 501 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 501 }) | jpeg %}" alt="professional lawyers book" width="1920" height="385" decoding="async">
+                        <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 501 }) | jpeg %}" alt="Gavel and legal balance on desk" width="1920" height="385" decoding="async">
     </picture>
 </div>
 
@@ -40,7 +41,7 @@ permalink: "/contact/"
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Contact Us</span>
-            <h2 class="cs-title">Free no obligation consultations, anytime.</h2>
+            <h1 class="cs-title">Free no obligation consultations, anytime.</h1>
             <p class="cs-text">
                 Get your case evaluated today, don’t wait. For urgent matters, please call, text or whatsapp the number below:
             </p>
@@ -51,17 +52,16 @@ permalink: "/contact/"
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Phone</span>
-                        <a href="tel:805-743-7112" class="cs-link">(805) 743-7112 
-                        </a>
+                        <a href="tel:{{client.phoneForTel}}" class="cs-link">{{ client.phoneFormatted }}</a>
                     </div>
                 </li>
                 <li class="cs-li">
                     <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="/assets/svgs/mail-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                        <img aria-hidden="true" src="/assets/svgs/pin-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Los Angeles Office</span>
-                        <a href="mailto:{{ client.email }}" class="cs-link">3717 E. Thousand Oaks Blvd. Suite 160 Westlake Village, CA 91362</a>
+                        <a href="{{ client.address.mapLink }}" target="_blank" class="cs-link">3717 E. Thousand Oaks Blvd. Suite 160 Westlake Village, CA 91362</a>
                     </div>
                 </li>
                 <li class="cs-li">
@@ -70,12 +70,12 @@ permalink: "/contact/"
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Miami Office</span>
-                        <a href="{{client.address.mapLink}}" class="cs-link" target="_blank">7270 NW 12th St Suite 865, Miami, FL 33126, US
+                        <a href="https://maps.app.goo.gl/1GTSx2jeCXzBq5o36" class="cs-link" target="_blank">7270 NW 12th St Suite 865, Miami, FL 33126, US</a>
                         </a>
                     </div>
                 </li>
             </ul>
-            <img class="cs-image" src="/assets/images/affirm.png" alt="client credit and affirm" width="632" height="725" decoding="async">
+            <img class="cs-image" src="/assets/images/affirm.png" alt="Affirm payment logo" width="632" height="725" decoding="async">
             <h3 class="cs-h3">
                 You can afford a good lawyer. Payment Plans Available. 
             </h3>
@@ -123,7 +123,7 @@ permalink: "/contact/"
                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/building.jpg" | resize({ width: 922, height: 1414 }) | webp %}" type="image/webp">
                 <!--Desktop Image-->
                 <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/building.jpg" | resize({ width: 1264, height: 1450 }) | webp %}" type="image/webp">
-                <img src="{% getUrl "/assets/images/building.jpg" | resize({ width: 1264, height: 1450 }) | png %}" alt="Tall modern office building exterior" width="632" height="725" decoding="async">
+                <img src="{% getUrl "/assets/images/building.jpg" | resize({ width: 1264, height: 1450 }) | png %}" alt="Office building exterior" width="632" height="725" decoding="async">
             </picture>
         </form>
     </div>

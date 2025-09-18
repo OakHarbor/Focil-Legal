@@ -8,6 +8,7 @@ permalink: "/about/"
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 480 }) | webp %}"/>
 {% endblock %}
 
 {% block body %}
@@ -28,7 +29,7 @@ permalink: "/about/"
         <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 730 }) | webp %}" type="image/webp">
         <!--Desktop Image-->
         <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 501 }) | webp %}" type="image/webp">
-        <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 501 }) | jpeg %}" alt="professional lawyers book" width="1920" height="385" decoding="async">
+        <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 501 }) | jpeg %}" alt="Gavel and legal balance on desk" width="1920" height="385" decoding="async">
     </picture>
 </div>
 
@@ -49,7 +50,7 @@ permalink: "/about/"
                     <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/flag.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
                     <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/flag.jpg" | resize({ width: 634, height: 640 }) | avif %}" type="image/avif">
                     <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/flag.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/flag.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Wooden gavel on dark surface" width="413" height="320" loading="lazy" decoding="async">
+                    <img src="{% getUrl "/assets/images/flag.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="American flag waving at sunset" width="413" height="320" loading="lazy" decoding="async">
                 </picture>
             </div>
             <!--Big Background Image-->
@@ -60,15 +61,15 @@ permalink: "/about/"
                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 820, height: 1062, position: 'top' }) | webp %}" type="image/webp">
                 <!--Desktop Image-->
                 <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 1042, height: 1344, position: 'top' }) | webp %}" type="image/webp">
-                <img src="{% getUrl "/assets/images/c7.jpg" | resize({ width: 1042, height: 1344, position: 'top' }) | jpeg %}" alt="Professional headshot of businessman in suit" width="521" height="672" loading="lazy" decoding="async">
+                <img src="{% getUrl "/assets/images/c7.jpg" | resize({ width: 1042, height: 1344, position: 'top' }) | jpeg %}" alt="Professional lawyer portrait" width="521" height="672" loading="lazy" decoding="async">
             </picture>
             
         </div>
         <!-- Right Content Section-->
         <div class="cs-content">
             <span class="cs-topper">Leading Family Law Firm</span>
-            <h2 class="cs-title">Dedicated to Justice 
-                and Fairness</h2>
+            <h1 class="cs-title">Dedicated to Justice 
+                and Fairness</h1>
             <p class="cs-text">
                 Focil Legal PLLC is a veteran-owned, bilingual law firm committed to fighting for immigrants, families, and victims of injustice with experience, integrity, and unwavering dedication.
             </p>
@@ -118,7 +119,7 @@ permalink: "/about/"
         <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c10.jpg" | resize({ width: 1984, height: 962 }) | webp %}" type="image/webp">
         <!--Desktop Image-->
         <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c10.jpg" | resize({ width: 2500, height: 1211 }) | webp %}" type="image/webp">
-        <img src="{% getUrl "/assets/images/c10.jpg" | resize({ width: 2500, height: 1211 }) | jpeg %}" alt="Silhouettes of two people against sunset sky" width="1280" height="620" loading="lazy" decoding="async">
+        <img src="{% getUrl "/assets/images/c10.jpg" | resize({ width: 2500, height: 1211 }) | jpeg %}" alt="People walking with luggage at airport" width="1280" height="620" loading="lazy" decoding="async">
     </picture>
 </section>
              
@@ -247,7 +248,7 @@ permalink: "/about/"
                 Justice is not given; it is fought for with courage, truth, and compassion in every case we take on.
             </p>
             <!--Graphic-->
-            <img class="cs-floater" loading="lazy" decoding="async" src="/assets/images/sheild.png" alt="graphic" width="125" height="118" aria-hidden="true">
+            <img class="cs-floater" loading="lazy" decoding="async" src="/assets/images/sheild.png" alt="Focil Legal shield logo light" width="125" height="118" aria-hidden="true">
         </div>
     </div>
     <!--Background Image-->

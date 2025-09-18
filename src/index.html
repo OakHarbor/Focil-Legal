@@ -10,6 +10,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 {% block head %}
     <!-- Critical styles are loaded first -->
     <link rel="stylesheet" href="/assets/css/critical.css"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/hero.jpg" | resize({ width: 640, height: 480 }) | webp %}"/>
 
     <!-- If we're in production, defer the rest of the home page styles. In development, always load it. Otherwise the site will break when hot-reload is used. -->
     {% if kit.isProduction %}
@@ -50,7 +51,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({ width: 956, height: 1372, position: "top" }) | webp %}" type="image/webp">
                     <!--Desktop Image-->
                     <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero.jpg" | resize({ width: 1260, height: 1760, position: "top" }) | webp %}" type="image/webp">
-                    <img src="{% getUrl "/assets/images/hero.jpg" | resize({ width: 1260, height: 1760, position: "top" }) | jpeg %}" alt="family law attorney" loading="eager" width="630" height="880" decoding="async">
+                    <img src="{% getUrl "/assets/images/hero.jpg" | resize({ width: 1260, height: 1760, position: "top" }) | jpeg %}" alt="Family attending immigration ceremony" loading="eager" fetchpriority="high" width="630" height="880" decoding="async">
                 </picture>
             </div>
             <div class="cs-box">
@@ -80,7 +81,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
-                <a href="/fort-worth-divorce-attorneys/" class="cs-link">
+                <a href="/immigration-law/" class="cs-link">
                     <h3 class="cs-h3">Immigration Law</h3>
                 </a>
                 <picture class="cs-background">
@@ -90,11 +91,11 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 634, height: 640 }) | webp %}" type="image/webp">
                     <!--Desktop Image-->
                     <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c1.jpg" | resize({ width: 826, height: 640 }) | webp %}" type="image/webp">
-                    <img src="{% getUrl "/assets/images/c1.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="professional in work uniform" width="413" height="320" loading="lazy" decoding="async">
+                    <img src="{% getUrl "/assets/images/c1.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Immigration law consultation with documents" width="413" height="320" loading="lazy" decoding="async">
                 </picture>
             </li>
             <li class="cs-item">
-                <a href="/gestational-agreements-and-surrogacy-texas/" class="cs-link">
+                <a href="/personal-injury-representation/" class="cs-link">
                     <h3 class="cs-h3">Personal Injury 
                         Representation</h3>
                 </a>
@@ -105,11 +106,11 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 634, height: 640 }) | webp %}" type="image/webp">
                     <!--Desktop Image-->
                     <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c2.jpg" | resize({ width: 826, height: 640 }) | webp %}" type="image/webp">
-                    <img src="{% getUrl "/assets/images/c2.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Business person in red suit jacket" width="413" height="320" loading="lazy" decoding="async">
+                    <img src="{% getUrl "/assets/images/c2.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Signing legal paperwork with attorney" width="413" height="320" loading="lazy" decoding="async">
                 </picture>
             </li>
             <li class="cs-item">
-                <a href="/child-custody/" class="cs-link">
+                <a href="/federal-injury-cases/" class="cs-link">
                     <h3 class="cs-h3">Federal Injury Cases</h3>
                 </a>
                 <picture class="cs-background">
@@ -119,11 +120,11 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 634, height: 640 }) | webp %}" type="image/webp">
                     <!--Desktop Image-->
                     <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c3.jpg" | resize({ width: 826, height: 640 }) | webp %}" type="image/webp">
-                    <img src="{% getUrl "/assets/images/c3.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Woman in red blazer smiling" width="413" height="320" loading="lazy" decoding="async">
+                    <img src="{% getUrl "/assets/images/c3.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Empty courtroom benches" width="413" height="320" loading="lazy" decoding="async">
                 </picture>
             </li>
             <li class="cs-item">
-                <a href="/child-support/" class="cs-link">
+                <a href="/criminal-defense/" class="cs-link">
                     <h3 class="cs-h3">Criminal Defense</h3>
                 </a>
                 <picture class="cs-background">
@@ -133,11 +134,11 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 634, height: 640 }) | webp %}" type="image/webp">
                     <!--Desktop Image-->
                     <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c4.jpg" | resize({ width: 826, height: 640 }) | webp %}" type="image/webp">
-                    <img src="{% getUrl "/assets/images/c4.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="worker in white coat" width="413" height="320" loading="lazy" decoding="async">
+                    <img src="{% getUrl "/assets/images/c4.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Attorney meeting with client" width="413" height="320" loading="lazy" decoding="async">
                 </picture>
             </li>
             <li class="cs-item">
-                <a href="/domestic-violence-and-divorce/" class="cs-link">
+                <a href="/international-migration-services/" class="cs-link">
                     <h3 class="cs-h3">International 
                         Migration Services</h3>
                 </a>
@@ -148,11 +149,11 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 634, height: 640 }) | webp %}" type="image/webp">
                     <!--Desktop Image-->
                     <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c5.jpg" | resize({ width: 826, height: 640 }) | webp %}" type="image/webp">
-                    <img src="{% getUrl "/assets/images/c5.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Close-up of hands in business handshake" width="413" height="320" loading="lazy" decoding="async">
+                    <img src="{% getUrl "/assets/images/c5.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="International migration meeting with group" width="413" height="320" loading="lazy" decoding="async">
                 </picture>
             </li>
             <li class="cs-item">
-                <a href="/family-law-order-enforcement/" class="cs-link">
+                <a href="/direct-attorney-engagement/" class="cs-link">
                     <h3 class="cs-h3">Direct Attorney 
                         Engagement</h3>
                 </a>
@@ -163,7 +164,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 634, height: 640 }) | webp %}" type="image/webp">
                     <!--Desktop Image-->
                     <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c6.jpg" | resize({ width: 826, height: 640 }) | webp %}" type="image/webp">
-                    <img src="{% getUrl "/assets/images/c6.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Gavel and legal documents on desk" width="413" height="320" loading="lazy" decoding="async">
+                    <img src="{% getUrl "/assets/images/c6.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Lawyer providing direct client advice" width="413" height="320" loading="lazy" decoding="async">
                 </picture>
             </li>
         </ul>
@@ -187,7 +188,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/flag.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
                     <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/flag.jpg" | resize({ width: 634, height: 640 }) | avif %}" type="image/avif">
                     <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/flag.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/flag.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="Wooden gavel on dark surface" width="413" height="320" loading="lazy" decoding="async">
+                    <img src="{% getUrl "/assets/images/flag.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="American flag waving at sunset" width="413" height="320" loading="lazy" decoding="async">
                 </picture>
             </div>
             <!--Big Background Image-->
@@ -198,7 +199,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 820, height: 1062, position: 'top' }) | webp %}" type="image/webp">
                 <!--Desktop Image-->
                 <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 1042, height: 1344, position: 'top' }) | webp %}" type="image/webp">
-                <img src="{% getUrl "/assets/images/c7.jpg" | resize({ width: 1042, height: 1344, position: 'top' }) | jpeg %}" alt="Professional headshot of businessman in suit" width="521" height="672" loading="lazy" decoding="async">
+                <img src="{% getUrl "/assets/images/c7.jpg" | resize({ width: 1042, height: 1344, position: 'top' }) | jpeg %}" alt="Professional lawyer portrait" width="521" height="672" loading="lazy" decoding="async">
             </picture>
             
         </div>
@@ -218,7 +219,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 <li class="cs-li">100% bilingual team with deep cultural awareness</li>
                 <li class="cs-li">Over 20 years of combined legal experience</li>
             </ul>
-            <a class="cs-button-solid" href="/contact/" target="_blank">Learn More About Us</a>
+            <a class="cs-button-solid" href="/about/" target="_blank">Learn More About Us</a>
         </div>
     </div>
 </section>
@@ -289,7 +290,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                         <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c8.jpg" | resize({ width: 868, height: 832 }) | webp %}" type="image/webp">
                         <!--Desktop Image-->
                         <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c8.jpg" | resize({ width: 868, height: 752 }) | webp %}" type="image/webp">
-                        <img src="{% getUrl "/assets/images/c8.jpg" | resize({ width: 868, height: 752 }) | jpeg %}" alt="Two people reviewing documents outdoors" width="434" height="376" loading="lazy" decoding="async">
+                        <img src="{% getUrl "/assets/images/c8.jpg" | resize({ width: 868, height: 752 }) | jpeg %}" alt="Friends holding American flag outdoors" width="434" height="376" loading="lazy" decoding="async">
                     </picture>
                     <div class="cs-box">
                         <span class="cs-header">We Are In Your Corner</span>
@@ -303,7 +304,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                     <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c9.jpg" | resize({ width: 394, height: 432 }) | webp %}" type="image/webp">
                     <!--Desktop Image-->
                     <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c9.jpg" | resize({ width: 394, height: 394 }) | webp %}" type="image/webp">
-                    <img src="{% getUrl "/assets/images/c9.jpg" | resize({ width: 394, height: 394 }) | jpeg %}" alt="Professional man in dark suit" width="197" height="197" loading="lazy" decoding="async">
+                    <img src="{% getUrl "/assets/images/c9.jpg" | resize({ width: 394, height: 394 }) | jpeg %}" alt="Close-up of lawyer working on paperwork" width="197" height="197" loading="lazy" decoding="async">
                 </picture>
             </div>
         </div>
@@ -345,7 +346,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c10.jpg" | resize({ width: 1984, height: 962 }) | webp %}" type="image/webp">
         <!--Desktop Image-->
         <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c10.jpg" | resize({ width: 2500, height: 1211 }) | webp %}" type="image/webp">
-        <img src="{% getUrl "/assets/images/c10.jpg" | resize({ width: 2500, height: 1211 }) | jpeg %}" alt="Silhouettes of two people against sunset sky" width="1280" height="620" loading="lazy" decoding="async">
+        <img src="{% getUrl "/assets/images/c10.jpg" | resize({ width: 2500, height: 1211 }) | jpeg %}" alt="People walking with luggage at airport" width="1280" height="620" loading="lazy" decoding="async">
     </picture>
 </section>
                       
@@ -447,7 +448,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 Justice is not given; it is fought for with courage, truth, and compassion in every case we take on.
             </p>
             <!--Graphic-->
-            <img class="cs-floater" loading="lazy" decoding="async" src="/assets/images/sheild.png" alt="graphic" width="125" height="118" aria-hidden="true">
+            <img class="cs-floater" loading="lazy" decoding="async" src="/assets/images/sheild.png" alt="Focil Legal shield logo light" width="125" height="118" aria-hidden="true">
         </div>
     </div>
     <!--Background Image-->
