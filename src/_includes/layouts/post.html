@@ -39,23 +39,17 @@
                 <picture class="cs-article-image">
                     <!--Mobile Image-->
                     <source media="(max-width: 600px)" srcset="{% getUrl image | resize({ width: 576, height: 400 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl image | resize({ width: 576, height: 400 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl image | resize({ width: 576, height: 400 }) | jpeg %}" type="image/jpeg">
                     <!--Tablet Image-->
                     <source media="(max-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 614 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 614 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 614 }) | jpeg %}" type="image/jpeg">
                     <!--Desktop Image-->
                     <source media="(min-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 800 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 800 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl image | resize({ width: 1600, height: 800 }) | jpeg %}" type="image/jpeg">
                     <img src="{% getUrl image | resize({ width: 1600, height: 800 }) | jpeg %}" alt="{{ alt }}" width="800" height="400" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
                 <div class="cs-article-group">
                     <h1 class="cs-article-title">{{ title }}</h1>
                     <div class="cs-author-group">
                         <picture class="cs-author-img">
-                            <img src="/assets/svgs/profile.svg" alt="Profile icon" width="32" height="32" decoding="async" loading="lazy" aria-hidden="true"/>
+                            <img src="/assets/images/profile.png" alt="Profile icon" width="32" height="32" decoding="async" loading="lazy" aria-hidden="true"/>
                         </picture>
                         <span class="cs-author-name">{{ author }}</span>
                         <span aria-hidden="true" class="cs-dot"></span>
