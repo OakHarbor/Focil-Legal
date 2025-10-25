@@ -8,7 +8,6 @@
 const pluginImages = require("@codestitchofficial/eleventy-plugin-sharp-images");
 const pluginMinifier = require("@codestitchofficial/eleventy-plugin-minify");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
-const { I18nPlugin } = require("@11ty/eleventy");
 
 // ⚙️ Configuration Files
 const configSitemap = require("./src/config/plugins/sitemap");
@@ -24,7 +23,9 @@ const filterPostDate = require("./src/config/filters/postDate");
 const filterIsoDate = require("./src/config/filters/isoDate");
 const isProduction = process.env.ELEVENTY_ENV === "PROD";
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+    const { I18nPlugin } = await import("@11ty/eleventy");
+
     // ═════════════════════════════════════════════════════════════════════════
     // LANGUAGES
     // Using Eleventy's build events to process non-template languages
