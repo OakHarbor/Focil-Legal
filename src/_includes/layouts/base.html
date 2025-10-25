@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang }}">
     <head>
         <!-- Standard meta tags -->
         <meta charset="UTF-8">
@@ -10,21 +10,21 @@
         <meta name="generator" content="{{ eleventy.generator }}">
 
         <!--Social Media Display-->
-        <meta property="og:title" content="{{ title }}"/>
-        <meta property="og:description" content="{{ description }}"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
-        <meta property="og:image" content="{{ image or "/assets/images/hero.jpg" }}"/>
-        <meta property="og:image:secure_url" content="{{ image or "/assets/images/hero.jpg" }}"/>
+        <meta property="og:title" content="{{ title }}" />
+        <meta property="og:description" content="{{ description }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ client.domain }}{{ page.url }}" />
+        <meta property="og:image" content="{{ image or "/assets/images/hero.jpg" }}" />
+        <meta property="og:image:secure_url" content="{{ image or "/assets/images/hero.jpg" }}" />
 
         <!--Favicons-->
         <!-- https://realfavicongenerator.net/ -->
-        <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96"/>
-        <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg"/>
-        <link rel="shortcut icon" href="/assets/favicons/favicon.ico"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png"/>
-        <meta name="apple-mobile-web-app-title" content="Starter Kit"/>
-        <link rel="manifest" href="/assets/favicons/site.webmanifest"/>
+        <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+        <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Starter Kit" />
+        <link rel="manifest" href="/assets/favicons/site.webmanifest" />
 
         <!-- Preloads -->
         <link rel="preload" as="image" href="/assets/images/logo.png">
@@ -38,7 +38,8 @@
         <script defer src="/assets/js/dark.js"></script>
         <script defer src="/assets/js/nav.js"></script>
 
-        {% block head %}{% endblock %}
+        {% block head %}
+        {% endblock %}
 
         <title>{{ title }}</title>
     </head>
@@ -48,7 +49,8 @@
 
         {% include "sections/header.html" %}
         <main id="main">
-            {% block body %}{% endblock %}
+            {% block body %}
+            {% endblock %}
         </main>
         {% include "sections/footer.html" %}
 
