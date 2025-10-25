@@ -8,10 +8,12 @@
 const pluginImages = require("@codestitchofficial/eleventy-plugin-sharp-images");
 const pluginMinifier = require("@codestitchofficial/eleventy-plugin-minify");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
+const { I18nPlugin } = require("@11ty/eleventy");
 
 // ⚙️ Configuration Files
 const configSitemap = require("./src/config/plugins/sitemap");
 const configImages = require("./src/config/plugins/images");
+const configInternationalisation = require("./src/config/plugins/internationalisation");
 
 // 🔧 Processing Functions
 const less = require("./src/config/processors/less");
@@ -43,6 +45,13 @@ module.exports = function (eleventyConfig) {
     // Extend Eleventy with additional functionality
     // Learn more: https://www.11ty.dev/docs/plugins/
     // ═════════════════════════════════════════════════════════════════════════
+
+    /*
+     * 🌐 Internationalization (i18n)
+     * Enables multi-language support for the website
+     * Documentation: https://www.11ty.dev/docs/plugins/i18n/
+     */
+    eleventyConfig.addPlugin(I18nPlugin, configInternationalisation);
 
     /*
      * 🖼️ Image Optimization

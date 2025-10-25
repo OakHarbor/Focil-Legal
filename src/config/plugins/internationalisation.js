@@ -1,0 +1,7 @@
+module.exports = {
+    defaultLanguage: "en",
+    languages: [
+        { code: "en", name: "English" },
+        { code: "es", name: "Spanish" },
+    ],
+};
