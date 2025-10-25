@@ -4,4 +4,5 @@ module.exports = {
         { code: "en", name: "English" },
         { code: "es", name: "Spanish" },
     ],
+    errorMode: "never",
 };
