@@ -241,6 +241,11 @@
                     <p class="cs-text">
                         {{ whyChoose1710.text2 }}
                     </p>
+                    {% if whyChoose1710.text3 %}
+                        <p class="cs-text">
+                            {{ whyChoose1710.text3 }}
+                        </p>
+                    {% endif %}
                     <a class="cs-button-solid cs-secondary" href="{{ whyChoose1710.buttonLink | locale_url }}">{{ whyChoose1710.buttonText }}</a>
                 </div>
             </div>

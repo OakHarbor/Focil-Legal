@@ -27,6 +27,7 @@ sbs297:
     - "Planes de pago asequibles comenzando con $500 de anticipo"
     - "Equipo 100% bilingüe con profunda conciencia cultural"
     - "Más de 20 años de experiencia legal combinada"
+    - "Red de abogados especializados para casos complejos a nivel nacional"
   buttonText: "Conoce Más Sobre Nosotros"
   buttonLink: "/about/"
 
@@ -37,6 +38,7 @@ whyChoose1710:
   textTop: "Nuestra firma prioriza una representación fuerte en asuntos de inmigración, lesiones y civiles, asegurando que los clientes reciban justicia a través de una defensa hábil y compasiva."
   text1: "El derecho de inmigración está en el corazón de nuestra práctica, con enfoque particular en defensa de deportación y casos de asilo. Luchamos incansablemente para mantener a las familias unidas y proteger a aquellos que buscan refugio, ofreciendo representación personalizada y planes asequibles para facilitar el proceso."
   text2: "Estamos preparándonos para expandirnos a lesiones personales, agravios y litigios civiles, todos manejados en base contingente. Esto significa que los clientes solo pagan si se recupera compensación, asegurando que la justicia permanezca accesible sin carga financiera al inicio."
+  text3: "Mantenemos una red de abogados especializados para ayudar con los casos más difíciles y complicados. Incluso si estás en otro estado, podemos ayudarte mientras brindamos el mismo compromiso directo con abogado y cuidado por el que somos conocidos."
   buttonText: "Explora Nuestros Servicios Legales"
   buttonLink: "/contact/"
   imageAlt: "Personas caminando con equipaje en aeropuerto"

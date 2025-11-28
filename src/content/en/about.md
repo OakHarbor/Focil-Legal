@@ -27,6 +27,7 @@ sbs297:
     - "Affordable payment plans starting at $500 down"
     - "100% bilingual team with deep cultural awareness"
     - "Over 20 years of combined legal experience"
+    - "Network of specialized attorneys for complex cases nationwide"
   buttonText: "Learn More About Us"
   buttonLink: "/about/"
 
@@ -37,6 +38,7 @@ whyChoose1710:
   textTop: "Our firm prioritizes strong representation in immigration, injury, and civil matters, ensuring clients receive justice through skilled and compassionate advocacy."
   text1: "Immigration law is at the heart of our practice, with particular focus on deportation defense and asylum cases. We fight tirelessly to keep families together and protect those seeking refuge, offering personalized representation and affordable plans to ease the process."
   text2: "We are preparing to expand into personal injury, torts, and civil litigation, all handled on a contingency basis. This means clients only pay if compensation is recovered, ensuring justice remains accessible without financial burden at the start."
+  text3: "We maintain a network of specialized attorneys to help with the toughest and most complicated cases. Even if you are in another state, we may be able to help you while bringing the same direct attorney engagement and care we are known for."
   buttonText: "Explore Our Legal Services"
   buttonLink: "/contact/"
   imageAlt: "People walking with luggage at airport"
