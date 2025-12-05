@@ -105,15 +105,21 @@ reviews990:
   topper: "Testimonials"
   title: "What Clients Say"
   reviews:
-    - name: "Ernesto C."
-      source: "Google"
-      text: "Excellent work from Focil Legal PLLC. At all times they stayed on top of the case. They obtained work permits for our family and closed the court case in a very short time. We will continue with them for future legal procedures in the country."
-    - name: "Pedro H."
-      source: "Google"
-      text: "It is a united team that meets the expectations of its clients, where the client is the priority. Thank you, Focil Legal team."
-    - name: "Dani F."
-      source: "Google"
-      text: "Thanks to them, my boyfriend and I received our work permit earlier than expected. We are very grateful. They are handling our asylum case and are always attentive to everything we have needed with our case. We highly recommend them, the firm is super efficient."
+    - name: "Andrew C."
+      location: "Florida"
+      text: "I have to say this experience has been the most stress free endeavour I have encountered. Taking into acount that this was a major decision and change in our lives. From the very start David took the time to listen and understand our needs. Then layed out a path best suited to what we needed. Once we were clear we were guided step by step and with each step we were kept in the loop of progress and upcoming requirements."
+      link: https://maps.app.goo.gl/HQxoqYNssGrtEMoV6
+      linkText: "View on Google Maps"
+    - name: "Valentynne H."
+      location: "Florida"
+      text: "I can't thank David enough for everything he did for my mom's case. It truly seemed impossible, but he made it possible! He was professional, dedicated, and truly cared about helping us. His knowledge, patience, and persistence made all the difference. We are forever grateful for his hard work and support. Highly recommend him to anyone in need of an honest and effective attorney!"
+      link: https://maps.app.goo.gl/9513DkvcerbgGxkN9
+      linkText: "View on Google Maps"
+    - name: "Karelia C."
+      location: "Florida"
+      text: "My experience with attorney David Focil has been excellent. He is a very attentive professional, always willing to listen and clearly answer all my questions. Thanks to his dedication and knowledge, he was able to change our I-220A to Parole, which has been a great achievement for my family. He made me feel supported and safe throughout the entire process."
+      link: https://maps.app.goo.gl/QeERYcvJLxQfruFp6
+      linkText: "View on Google Maps"
 
 # Blog Section
 blog988:

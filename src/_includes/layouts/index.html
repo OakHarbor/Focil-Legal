@@ -278,10 +278,11 @@
                     <li class="cs-item">
                         <div class="cs-flex">
                             <span class="cs-name">{{ review.name }}</span>
-                            <span class="cs-desc">{{ review.source }}</span>
+                            <span class="cs-desc">{{ review.location }}</span>
                             <p class="cs-item-text">
                                 {{ review.text }}
                             </p>
+                            <a class="cs-link" href="{{ review.link }}" target="_blank" rel="noopener noreferrer">{{ review.linkText }}</a>
                         </div>
                     </li>
                 {% endfor %}

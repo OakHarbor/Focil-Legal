@@ -31,12 +31,12 @@
             "about": "Acerca de Nosotros",
             "services": "Servicios Legales",
             "blog": "Blog",
-            "reviews": "Reseñas",
+            "reviews": "Calificaciones",
             "contact": "Contacto"
         },
         "services": {
-            "immigration": "Ley de Inmigración",
-            "personalInjury": "Representación de Lesiones Personales",
+            "immigration": "Casos de Inmigración",
+            "personalInjury": "Casos de Accidentes y Lesiones",
             "federalInjury": "Casos de Lesiones Federales",
             "criminalDefense": "Defensa Criminal",
             "internationalMigration": "Servicios de Migración Internacional",

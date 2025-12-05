@@ -23,11 +23,11 @@ services1800:
   buttonText: "Obtener una Consulta"
   buttonLink: "/contact/"
   services:
-    - title: "Derecho de Inmigración"
+    - title: "Casos de Inmigración"
       link: "/immigration-law/"
       image: "/assets/images/c1.jpg"
       imageAlt: "Consulta de derecho de inmigración con documentos"
-    - title: "Representación de Lesiones Personales"
+    - title: "Casos de Accidentes y Lesiones"
       link: "/personal-injury-representation/"
       image: "/assets/images/c2.jpg"
       imageAlt: "Firmando documentos legales con abogado"
@@ -78,7 +78,7 @@ whyChoose1634:
       title: "Representación Bilingüe"
       text: "El apoyo integral en inglés y español mejora significativamente la comunicación para todos los usuarios involucrados."
     - icon: "w2.svg"
-      title: "Valores de Propiedad de Veteranos"
+      title: "Firma dirigida y fundada por un veterano militar"
       text: "Priorizamos la integridad, disciplina y un fuerte compromiso con el éxito y satisfacción a largo plazo de nuestros clientes."
     - icon: "w3.svg"
       title: "Planes Asequibles"
@@ -103,17 +103,23 @@ whyChoose1710:
 # Reviews Section
 reviews990:
   topper: "Testimonios"
-  title: "Lo que Dicen los Clientes"
+  title: "Lo Que Dicen Nuestros Clientes"
   reviews:
-    - name: "Ernesto C."
-      source: "Google"
-      text: "Excelente trabajo de Focil Legal PLLC. En todo momento se mantuvieron al tanto del caso. Obtuvieron permisos de trabajo para nuestra familia y cerraron el caso judicial en muy poco tiempo. Continuaremos con ellos para futuros procedimientos legales en el país."
-    - name: "Pedro H."
-      source: "Google"
-      text: "Es un equipo unido que cumple con las expectativas de sus clientes, donde el cliente es la prioridad. Gracias, equipo de Focil Legal."
-    - name: "Dani F."
-      source: "Google"
-      text: "Gracias a ellos, mi novio y yo recibimos nuestro permiso de trabajo antes de lo esperado. Estamos muy agradecidos. Están manejando nuestro caso de asilo y siempre están atentos a todo lo que hemos necesitado con nuestro caso. Los recomendamos altamente, la firma es súper eficiente."
+    - name: "Andrew C."
+      location: "Florida"
+      text: "Debo decir que esta experiencia ha sido el esfuerzo más libre de estrés que he encontrado. Teniendo en cuenta que esta fue una decisión importante y un cambio en nuestras vidas. Desde el principio, David se tomó el tiempo de escuchar y comprender nuestras necesidades. Luego trazó un camino más adecuado a lo que necesitábamos. Una vez que tuvimos claridad, fuimos guiados paso a paso y con cada paso nos mantuvieron informados del progreso."
+      link: https://maps.app.goo.gl/HQxoqYNssGrtEMoV6
+      linkText: "Ver en Google Maps"
+    - name: "Valentynne H."
+      location: "Florida"
+      text: "No puedo agradecer suficiente a David por todo lo que hizo por el caso de mi madre. ¡Realmente parecía imposible, pero él lo hizo posible! Fue profesional, dedicado y realmente se preocupó por ayudarnos. Su conocimiento, paciencia y persistencia marcaron toda la diferencia. Estamos eternamente agradecidos por su arduo trabajo y apoyo. ¡Lo recomiendo ampliamente a cualquiera que necesite un abogado honesto y efectivo!"
+      link: https://maps.app.goo.gl/9513DkvcerbgGxkN9
+      linkText: "Ver en Google Maps"
+    - name: "Karelia C."
+      location: "Florida"
+      text: "Mi experiencia con el abogado David Focil ha sido excelente. Es un profesional muy atento, siempre dispuesto a escuchar y responder claramente todas mis preguntas. Gracias a su dedicación y conocimiento, pudo cambiar nuestro I-220A a Parole, lo cual ha sido un gran logro para mi familia. Me hizo sentir apoyada y segura durante todo el proceso."
+      link: https://maps.app.goo.gl/QeERYcvJLxQfruFp6
+      linkText: "Ver en Google Maps"
 
 # Blog Section
 blog988:

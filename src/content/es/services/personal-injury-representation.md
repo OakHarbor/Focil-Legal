@@ -8,7 +8,7 @@ layout: "layouts/service.html"
 
 # Banner Section
 banner559:
-  title: "Representación de Lesiones Personales"
+  title: "Casos de Accidentes y Lesiones"
   imageAlt: "escritorio de abogados"
 
 # Content Page Section
