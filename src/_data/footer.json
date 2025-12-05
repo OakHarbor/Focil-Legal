@@ -1,8 +1,8 @@
 {
     "en": {
         "quickLinks": "Quick Links",
-        "services": "Services",
-        "contact": "Contact",
+        "servicesHeader": "Services",
+        "contactHeader": "Contact",
         "nav": {
             "home": "Home",
             "about": "About",
@@ -26,8 +26,8 @@
     },
     "es": {
         "quickLinks": "Enlaces Rápidos",
-        "services": "Servicios",
-        "contact": "Contacto",
+        "servicesHeader": "Servicios",
+        "contactHeader": "Contacto",
         "nav": {
             "home": "Inicio",
             "about": "Acerca de",
