@@ -1,0 +1,50 @@
+{
+    "en": {
+        "emailText": "Click To Email",
+        "hours": "M-F: 8:00am - 9:00pm",
+        "nav": {
+            "home": "Home",
+            "about": "About Us",
+            "services": "Legal Services",
+            "blog": "Blog",
+            "reviews": "Reviews",
+            "contact": "Contact"
+        },
+        "services": {
+            "immigration": "Immigration Law",
+            "personalInjury": "Personal Injury Representation",
+            "federalInjury": "Federal Injury Cases",
+            "criminalDefense": "Criminal Defense",
+            "internationalMigration": "International Migration Services",
+            "directAttorney": "Direct Attorney Engagement"
+        },
+        "cta": {
+            "callUs": "Call Us Today",
+            "bookConsultation": "Book Your Consultation"
+        }
+    },
+    "es": {
+        "emailText": "Haga Clic Para Enviar Correo",
+        "hours": "L-V: 8:00am - 9:00pm",
+        "nav": {
+            "home": "Inicio",
+            "about": "Acerca de Nosotros",
+            "services": "Servicios Legales",
+            "blog": "Blog",
+            "reviews": "Calificaciones",
+            "contact": "Contacto"
+        },
+        "services": {
+            "immigration": "Casos de Inmigración",
+            "personalInjury": "Casos de Accidentes y Lesiones",
+            "federalInjury": "Casos de Lesiones Federales",
+            "criminalDefense": "Defensa Criminal",
+            "internationalMigration": "Servicios de Migración Internacional",
+            "directAttorney": "Compromiso Directo del Abogado"
+        },
+        "cta": {
+            "callUs": "Llámanos Hoy",
+            "bookConsultation": "Reserve Su Consulta"
+        }
+    }
+}

@@ -1,0 +1,109 @@
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 480 }) | webp %}" />
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-559">
+        <div class="cs-container">
+            <span class="cs-int-title">{{ banner559.title }}</span>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 582 }) | webp %}" type="image/webp">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 730 }) | webp %}" type="image/webp">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 501 }) | webp %}" type="image/webp">
+            <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 501 }) | jpeg %}" alt="{{ banner559.imageAlt }}" width="1920" height="385" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                   Contact                    -->
+    <!-- ============================================ -->
+
+    <section id="contact-1700">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">{{ contact1700.topper }}</span>
+                <h1 class="cs-title">
+                    {{ contact1700.title }}
+                </h1>
+                <p class="cs-text">
+                    {{ contact1700.text }}
+                </p>
+                <ul class="cs-ul">
+                    {% for contact in contact1700.contactInfo %}
+                        <li class="cs-li">
+                            <picture class="cs-icon-wrapper">
+                                <img aria-hidden="true" src="/assets/svgs/{{ contact.type }}-76.svg" alt="{{ contact.type }} icon" class="cs-icon" width="40" height="40" decoding="async">
+                            </picture>
+                            <div class="cs-flex-group">
+                                <span class="cs-header">{{ contact.header }}</span>
+                                <a href="{{ contact.link }}" class="cs-link" {% if contact.type == 'address' %}target="_blank"{% endif %}>{{ contact.display }}</a>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <img class="cs-image" src="/assets/images/affirm.png" alt="{{ contact1700.paymentImageAlt }}" width="632" height="725" decoding="async">
+                <h3 class="cs-h3">
+                    {{ contact1700.paymentTitle }}
+                </h3>
+                <p class="cs-text">
+                    {{ contact1700.paymentText }}
+                </p>
+            </div>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-1700" name="Contact Form" method="post" data-netlify="true" data-netlify-recaptcha="true">
+                <div class="cs-content">
+                    <h2 class="cs-title">
+                        {{ form1700.title }}
+                    </h2>
+                </div>
+                {% for field in form1700.fields %}
+                    <label class="cs-label">
+                        {{ field.label }}
+                        {% if field.type == 'select' %}
+                            <select class="cs-select" id="{{ field.name }}-1700" name="{{ field.name }}">
+                                {% for option in field.options %}
+                                    <option value="{{ option.value }}">
+                                        {{ option.text }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                        {% elif field.type == 'textarea' %}
+                            <textarea class="cs-input cs-textarea" {% if field.required %}required{% endif %} name="{{ field.name }}" id="{{ field.name }}-1700" placeholder="{{ field.placeholder }}"></textarea>
+                        {% else %}
+                            <input class="cs-input" {% if field.required %}required{% endif %} type="{{ field.type }}" id="{{ field.name }}-1700" name="{{ field.name }}" placeholder="{{ field.placeholder }}">
+                        {% endif %}
+                    </label>
+                {% endfor %}
+                <div class="cs-span-12" data-netlify-recaptcha="true">
+                </div>
+                <button class="cs-button-solid cs-submit" type="submit">
+                    {{ form1700.submitText }}
+                </button>
+
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/building.jpg" | resize({ width: 576, height: 1270 }) | webp %}" type="image/webp">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/building.jpg" | resize({ width: 922, height: 1414 }) | webp %}" type="image/webp">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/building.jpg" | resize({ width: 1264, height: 1450 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/building.jpg" | resize({ width: 1264, height: 1450 }) | png %}" alt="{{ form1700.backgroundImageAlt }}" width="632" height="725" decoding="async">
+                </picture>
+            </form>
+        </div>
+    </section>
+
+{% endblock %}

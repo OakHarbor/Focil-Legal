@@ -1,0 +1,52 @@
+{
+    "en": {
+        "quickLinks": "Quick Links",
+        "servicesHeader": "Services",
+        "contactHeader": "Contact",
+        "nav": {
+            "home": "Home",
+            "about": "About",
+            "reviews": "Reviews",
+            "blog": "Blog"
+        },
+        "services": {
+            "immigration": "Immigration Law",
+            "personalInjury": "Personal Injury Representation",
+            "federalInjury": "Federal Injury Cases",
+            "criminalDefense": "Criminal Defense",
+            "internationalMigration": "International Migration Services",
+            "directAttorney": "Direct Attorney Engagement"
+        },
+        "contact": {
+            "email": "Click To Email",
+            "address1": "3717 E Thousand Oaks Blvd Suite 160, Westlake Village, CA 91362, United States",
+            "address2": "7270 NW 12th St Suite 865, Miami, FL 33126, United States"
+        },
+        "copyright": "© Copyright {year} - Designed & Hand Coded By"
+    },
+    "es": {
+        "quickLinks": "Enlaces Rápidos",
+        "servicesHeader": "Servicios",
+        "contactHeader": "Contacto",
+        "nav": {
+            "home": "Inicio",
+            "about": "Acerca de",
+            "reviews": "Calificaciones",
+            "blog": "Blog"
+        },
+        "services": {
+            "immigration": "Ley de Inmigración",
+            "personalInjury": "Casos de Accidents y Lesiones",
+            "federalInjury": "Casos de Lesiones Federales",
+            "criminalDefense": "Defensa Criminal",
+            "internationalMigration": "Servicios de Migración Internacional",
+            "directAttorney": "Compromiso Directo del Abogado"
+        },
+        "contact": {
+            "email": "Haga Clic Para Enviar Correo",
+            "address1": "3717 E Thousand Oaks Blvd Suite 160, Westlake Village, CA 91362, Estados Unidos",
+            "address2": "7270 NW 12th St Suite 865, Miami, FL 33126, Estados Unidos"
+        },
+        "copyright": "© Derechos de Autor {year} - Diseñado y Codificado a Mano Por"
+    }
+}

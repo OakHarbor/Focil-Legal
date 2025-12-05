@@ -12,6 +12,7 @@ const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
 // ⚙️ Configuration Files
 const configSitemap = require("./src/config/plugins/sitemap");
 const configImages = require("./src/config/plugins/images");
+const configInternationalisation = require("./src/config/plugins/internationalisation");
 
 // 🔧 Processing Functions
 const less = require("./src/config/processors/less");
@@ -22,7 +23,9 @@ const filterPostDate = require("./src/config/filters/postDate");
 const filterIsoDate = require("./src/config/filters/isoDate");
 const isProduction = process.env.ELEVENTY_ENV === "PROD";
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+    const { I18nPlugin } = await import("@11ty/eleventy");
+
     // ═════════════════════════════════════════════════════════════════════════
     // LANGUAGES
     // Using Eleventy's build events to process non-template languages
@@ -43,6 +46,13 @@ module.exports = function (eleventyConfig) {
     // Extend Eleventy with additional functionality
     // Learn more: https://www.11ty.dev/docs/plugins/
     // ═════════════════════════════════════════════════════════════════════════
+
+    /*
+     * 🌐 Internationalization (i18n)
+     * Enables multi-language support for the website
+     * Documentation: https://www.11ty.dev/docs/plugins/i18n/
+     */
+    eleventyConfig.addPlugin(I18nPlugin, configInternationalisation);
 
     /*
      * 🖼️ Image Optimization

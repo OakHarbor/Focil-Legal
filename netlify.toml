@@ -10,3 +10,27 @@ package = "netlify-plugin-cache"
     "public/assets/images", # Processed images - adjust to match your outputDir
     ".cache" # Remote Assets
   ]
+
+# Language-based redirects
+# Redirect users to their preferred language based on Accept-Language header
+
+[[redirects]]
+  from = "/"
+  to = "/es/"
+  status = 302
+  force = true
+  conditions = {Language = ["es"]}
+
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+  force = true
+  conditions = {Language = ["en"]}
+
+# Fallback to English for all other languages
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+  force = true

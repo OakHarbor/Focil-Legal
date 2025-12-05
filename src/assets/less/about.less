@@ -552,8 +552,8 @@
         }
 
         .cs-title {
-            margin: 0;
             max-width: 24ch;
+            margin: 0;
         }
 
         .cs-card-group {
@@ -576,29 +576,29 @@
         .cs-flex {
             text-align: left;
             width: 100%;
-            /* 16px - 32px */
-            padding: clamp(1rem, 3vw, 2rem);
             /* prevents padding from affecting height and wodth */
             box-sizing: border-box;
+            /* 16px - 32px */
+            padding: clamp(1rem, 3vw, 2rem);
             border: 1px solid #E8E8E8;
             display: flex;
-            justify-content: flex-start;
             flex-direction: column;
+            justify-content: flex-start;
             align-items: flex-start;
         }
 
         .cs-name {
             /* 20px - 25px */
             font-size: clamp(1.25rem, 2.3vw, 1.5625rem);
-            line-height: 1.2em;
             font-weight: 700;
+            line-height: 1.2em;
             margin: 0;
         }
 
         .cs-desc {
             font-size: (16/16rem);
-            line-height: 1.5em;
             font-weight: 400;
+            line-height: 1.5em;
             /* 8px - 28px */
             margin: 0 0 clamp(0.5rem, 3.2vw, 1.75rem);
             opacity: 0.8;
@@ -609,8 +609,26 @@
             /* 14px - 16px */
             font-size: clamp(0.875rem, 1.5vw, 1rem);
             line-height: 1.5em;
+            text-overflow: ellipsis;
             margin: 0;
+            overflow: hidden;
             opacity: 0.8;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+        }
+
+        .cs-link {
+            font-size: (16/16rem);
+            line-height: 1.2em;
+            width: auto;
+            margin: 0;
+            margin-top: auto;
+            padding-top: (16/16rem);
+            color: var(--primary);
+            display: inline-block;
+            position: relative;
+            transition: color 0.3s;
         }
     }
 }
@@ -634,7 +652,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #reviews-990 {
-            
+
             .cs-title,
             .cs-name,
             .cs-desc,

@@ -1,0 +1,241 @@
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 480 }) | webp %}" />
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-559">
+        <div class="cs-container">
+            <span class="cs-int-title">{{ banner559.title }}</span>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 582 }) | webp %}" type="image/webp">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 730 }) | webp %}" type="image/webp">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 501 }) | webp %}" type="image/webp">
+            <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 501 }) | jpeg %}" alt="{{ banner559.imageAlt }}" width="1920" height="385" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs-297">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-image-group">
+                <!--Floating Box-->
+                <div class="cs-box">
+                    <span class="cs-number">{{ sbs297.number }}</span>
+                    <span class="cs-desc">{{ sbs297.desc }}</span>
+                    <!--Background image for cs-box-->
+                    <picture class="cs-box-picture">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/flag.jpg" | resize({ width: 576, height: 480 }) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/flag.jpg" | resize({ width: 634, height: 640 }) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/flag.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/flag.jpg" | resize({ width: 826, height: 640 }) | jpeg %}" alt="{{ sbs297.flagImageAlt }}" width="413" height="320" loading="lazy" decoding="async">
+                    </picture>
+                </div>
+                <!--Big Background Image-->
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 576, height: 638, position: 'top' }) | webp %}" type="image/webp">
+                    <!--Tablet Image-->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 820, height: 1062, position: 'top' }) | webp %}" type="image/webp">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/c7.jpg" | resize({ width: 1042, height: 1344, position: 'top' }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/c7.jpg" | resize({ width: 1042, height: 1344, position: 'top' }) | jpeg %}" alt="{{ sbs297.lawyerImageAlt }}" width="521" height="672" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">{{ sbs297.topper }}</span>
+                <h1 class="cs-title">
+                    {{ sbs297.title }}
+                </h1>
+                <p class="cs-text">
+                    {{ sbs297.text }}
+                </p>
+                <span class="cs-list-header">{{ sbs297.listHeader }}</span>
+                <ul class="cs-ul" id="list-1165">
+                    {% for achievement in sbs297.achievements %}
+                        <li class="cs-li">
+                            {{ achievement }}
+                        </li>
+                    {% endfor %}
+                </ul>
+                <a class="cs-button-solid" href="{{ sbs297.buttonLink | locale_url }}" target="_blank">{{ sbs297.buttonText }}</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Why Choose Us                -->
+    <!-- ============================================ -->
+
+    <section id="why-choose-1710">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">{{ whyChoose1710.topper }}</span>
+                    <h2 class="cs-title">
+                        {{ whyChoose1710.title }}
+                    </h2>
+                </div>
+                <div class="cs-right">
+                    <p class="cs-text-top">
+                        {{ whyChoose1710.textTop }}
+                    </p>
+                    <p class="cs-text">
+                        {{ whyChoose1710.text1 }}
+                    </p>
+                    <p class="cs-text">
+                        {{ whyChoose1710.text2 }}
+                    </p>
+                    {% if whyChoose1710.text3 %}
+                    <p class="cs-text">
+                        {{ whyChoose1710.text3 }}
+                    </p>
+                    {% endif %}
+                    <a class="cs-button-solid cs-secondary" href="{{ whyChoose1710.buttonLink | locale_url }}">{{ whyChoose1710.buttonText }}</a>
+                </div>
+            </div>
+        </div>
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/team.jpg" | resize({ width: 640, height: 680 }) | webp %}" type="image/webp">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/team.jpg" | resize({ width: 1984, height: 962 }) | webp %}" type="image/webp">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/team.jpg" | resize({ width: 2500, height: 1211 }) | webp %}" type="image/webp">
+            <img src="{% getUrl "/assets/images/team.jpg" | resize({ width: 2500, height: 1211 }) | jpeg %}" alt="{{ whyChoose1710.imageAlt }}" width="1280" height="620" loading="lazy" decoding="async">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews-990">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">{{ reviews990.topper }}</span>
+                <h2 class="cs-title">
+                    {{ reviews990.title }}
+                </h2>
+            </div>
+            <ul class="cs-card-group">
+                {% for review in reviews990.reviews %}
+                    <li class="cs-item">
+                        <div class="cs-flex">
+                            <span class="cs-name">{{ review.name }}</span>
+                            <span class="cs-desc">{{ review.location }}</span>
+                            <p class="cs-item-text">
+                                {{ review.text }}
+                            </p>
+                            <a class="cs-link" href="{{ review.link }}" target="_blank" rel="noopener noreferrer">{{ review.linkText }}</a>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Blog                      -->
+    <!-- ============================================ -->
+
+    <section id="blog-988">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-topper">{{ blog988.topper }}</span>
+                    <h2 class="cs-title">
+                        {{ blog988.title }}
+                    </h2>
+                </div>
+                <a href="{{ blog988.buttonLink | locale_url }}" class="cs-button-solid">{{ blog988.buttonText }}</a>
+            </div>
+            <ul class="cs-card-group">
+                {% for post in collections.post | reverse %}
+                    {% if loop.index <= 3 %}
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image-->
+                                <source media="(max-width: 600px)" srcset="{% getUrl post.data.image | resize({ width: 576, height: 960 }) | avif %}" type="image/avif">
+                                <!--Tablet Image-->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 634, height: 960 }) | avif %}" type="image/avif">
+                                <!--Desktop Image-->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl post.data.image | resize({ width: 826, height: 960 }) | avif %}" type="image/avif">
+                                <img src="{% getUrl post.data.image | resize({ width: 826, height: 960 }) | jpeg %}" alt="{{ post.data.imageAlt }}" width="413" height="480" loading="lazy" decoding="async">
+                            </picture>
+                            <div class="cs-info">
+                                <span class="cs-date">
+                                    <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/calendar.svg" alt="calendar icon" width="20" height="20">
+                                    {{ post.data.date | postDate }}
+                                </span>
+                                <h3 class="cs-h3">
+                                    {{ post.data.title }}
+                                </h3>
+                                <span class="cs-desc">
+                                    {{ post.data.description }}
+                                </span>
+                                <a href="{{ post.url }}" class="cs-link">Read More about {{ post.data.title }}</a>
+                            </div>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Stats                      -->
+    <!-- ============================================ -->
+
+    <section id="stats-1668">
+        <div class="cs-container">
+            <ul class="cs-card-group">
+                {% for stat in stats1668.stats %}
+                    <li class="cs-item">
+                        <span class="cs-header">{{ stat.header }}</span>
+                        <span class="cs-number">{{ stat.number }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Subscribe                   -->
+    <!-- ============================================ -->
+
+    <section id="subscribe-1721">
+        <div class="cs-container">
+            <div class="cs-content">
+                <img class="cs-quote" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="graphic" width="80" height="66" aria-hidden="true">
+                <p class="cs-text">
+                    {{ subscribe1721.quote }}
+                </p>
+                <!--Graphic-->
+                <img class="cs-floater" loading="lazy" decoding="async" src="/assets/images/sheild.png" alt="Focil Legal shield logo light" width="125" height="118" aria-hidden="true">
+            </div>
+        </div>
+        <!--Background Image-->
+        <div class="cs-background">
+            <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.002820744128!2d-118.82840749999998!3d34.1640821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e825b766a89963%3A0x45e9d042251bdf6f!2sFocil%20Legal%20PLLC!5e1!3m2!1sen!2sus!4v1757741413721!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="{{ subscribe1721.mapTitle }}"></iframe>
+        </div>
+    </section>
+
+{% endblock %}
