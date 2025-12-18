@@ -1,39 +1,20 @@
 # Redirects from old website to new pages
-/immigration /immigration-law/ 301
-/immigration#page /immigration-law/ 301
-/criminal /criminal-defense/ 301
-/criminal#page /criminal-defense/ 301
-/attorney /contact/ 301
-/attorney#page /contact/ 301
-/free-consultation /contact/ 301
-/free-consultation#page /contact/ 301
-/#page / 301
-/english / 301
-/english#page / 301
-/news#page /news/ 301
-/news/l8ijsjx2g8paldz4w6bj9cm5ho3oek /news/uscis-to-review-social-media-accounts-for-immigrants/ 301
-/news?author=5dd9968a273ded4eff9ba34a /news/ 301
-/news?author=5dd9968a273ded4eff9ba34a#page /news/ 301
-/news/trump-administration-ends-biden-era-parole-programs#page /news/trump-administration-ends-biden-era-parole-programs/ 301
-/news/l8ijsjx2g8paldz4w6bj9cm5ho3oek#page /news/uscis-to-review-social-media-accounts-for-immigrants/ 301
-/news/termination-of-tps-for-venezuelans#page /news/termination-of-tps-for-venezuelans/ 301
-
-# # Pages that need to be created (not redirecting):
-# /espanol - Spanish language version  
-# /inicio - Spanish home page
-# /inmigracion - Spanish immigration page
-# /penal - Spanish criminal page
-# /abogado - Spanish attorney page
-# /consulta-gratis - Spanish free consultation page
-
-# /news/la-administracin-de-trump-pone-fin-al-parole-humanitario-para-cuba-hait-nicaragua-y-venezuela - Trump Spanish blog post
-# /news/la-administracin-de-trump-pone-fin-al-parole-humanitario-para-cuba-hait-nicaragua-y-venezuela#page - needs to redirect to the Trump Spanish blog post once created
-# /news/2023/supreme-court-decision-nz9lr - Supreme Court Spanish blog post
-
-# /espanol#page - Spanish language version with anchor
-# /inicio#page - Spanish home page with anchor
-# /inmigracion#page - Spanish immigration page with anchor
-# /penal#page - Spanish criminal page with anchor
-# /abogado#page - Spanish attorney page with anchor
-# /consulta-gratis#page - Spanish consultation page with anchor
+/immigration /immigration-law/ 301!
+/immigration#page /immigration-law/ 301!
+/criminal /criminal-defense/ 301!
+/criminal#page /criminal-defense/ 301!
+/attorney /contact/ 301!
+/attorney#page /contact/ 301!
+/free-consultation /contact/ 301!
+/free-consultation#page /contact/ 301!
+/#page / 301!   
+/english / 301!
+/english#page / 301!
+/news#page /news/ 301!
+/news/l8ijsjx2g8paldz4w6bj9cm5ho3oek /news/uscis-to-review-social-media-accounts-for-immigrants/ 301!
+/news?author=5dd9968a273ded4eff9ba34a /news/ 301!
+/news?author=5dd9968a273ded4eff9ba34a#page /news/ 301!
+/news/trump-administration-ends-biden-era-parole-programs#page /news/trump-administration-ends-biden-era-parole-programs/ 301!
+/news/l8ijsjx2g8paldz4w6bj9cm5ho3oek#page /news/uscis-to-review-social-media-accounts-for-immigrants/ 301!
+/news/termination-of-tps-for-venezuelans#page /news/termination-of-tps-for-venezuelans/ 301!
 
